@@ -3,7 +3,7 @@ on:
    push:
        Branches:
        -main
-Jobs:
+jobs:
   deploy-page:
     runs-on: ubuntu-latest
     steps:
