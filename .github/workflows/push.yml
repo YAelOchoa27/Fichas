@@ -5,14 +5,14 @@ on:
        -main
 
   jobs:
-  deploy-page:
-    runs-on: ubuntu-latest
-    steps:
+    deploy-page:
+      runs-on: ubuntu-latest
+      steps:
       - name: Checkout
-      uses: actions/checkout@2.3.1
+        uses: actions/checkout@2.3.1
 
       - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      with:
-        branch: gh-pages
-        folder: public
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+          with:
+            branch: gh-pages
+            folder: public
